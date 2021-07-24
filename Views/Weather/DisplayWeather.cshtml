@@ -1,0 +1,34 @@
+﻿@model WeatherApplication.Models.WeatherData
+
+
+<title>DisplayWeather</title>
+
+<div>
+    <h4>WeatherData</h4>
+    <p>
+        Location: @Model.Location
+    </p>
+    <p>
+        Tempature: @string.Format("{0:00}", Model.Tempature)F
+    </p>
+    <p>
+        Humidity: @string.Format("{0:00}", Model.Humidity)%
+    </p>
+    <p>
+        Pressure: @string.Format("{0:00}", Model.Pressure)  
+    </p>
+    <p>
+        @{ 
+            var startTime = new DateTime(1970, 1, 1, 0, 0, 0).AddMilliseconds(Convert.ToDouble(@Model.Time)*1000);
+        }
+        
+        LastUpdated: @startTime
+    </p>
+
+
+
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

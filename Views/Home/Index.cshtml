@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Our Weather Application</h1>
+    <div class="card-body">
+        <h4 class="card-title">View all supported locations!</h4>
+        <form asp-action="Index" asp-controller="Weather">
+            <div class="form-group">
+                <input type="submit" value="Locations" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+</div>
