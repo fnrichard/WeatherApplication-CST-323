@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WeatherApplication.Services.LoginData;
 
 namespace WeatherApplication
 {
@@ -28,7 +29,7 @@ namespace WeatherApplication
 
             //Dependancy Injection
             services.AddTransient<IDataDAO, DataDAO>();
-
+            services.AddTransient<IUserDAO, UserDAO>();
             services.AddControllersWithViews();
         }
 

@@ -7,6 +7,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using WeatherApplication.Models;
 
+/*
+    @Authors:
+        Alex J Zoller
+
+ */
+
 namespace WeatherApplication.Controllers
 {
     public class HomeController : Controller

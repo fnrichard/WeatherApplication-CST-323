@@ -5,6 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using WeatherApplication.Models;
 
+/*
+    @Authors:
+        Alex J Zoller
+
+ */
+
+
 namespace WeatherApplication.Controllers
 {
     public class WeatherController : Controller
@@ -16,12 +23,10 @@ namespace WeatherApplication.Controllers
             weatherData = dataServices;
         }
 
-
         public IActionResult Index()
         {
             return View("LocationsHome", weatherData.getAllData());
         }
-
 
         public IActionResult OpenWeather(string location)
         {

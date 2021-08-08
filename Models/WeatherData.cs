@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/*
+    @Authors:
+        Alex J Zoller
+
+ */
+
 namespace WeatherApplication.Models
 {
+
     public class WeatherData
     {
         public string Location { get; set; }
